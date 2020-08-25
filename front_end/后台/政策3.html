@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>智能导购后台页面</title>
+
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/xadmin.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/xadmin.js"></script>
+  </head>
+
+
+  <head>
+  <meta charset="UTF-8">
+   <title>部分国家新闻查询系统</title>
+   <style type="text/css">
+   *{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   }
+   .myul{
+   display: flex;
+   }
+   .myul li{
+   border: 1px solid rgb(102, 156, 238);
+   height: 70px;
+   width: 68px;
+   flex-direction: row;
+   text-align: center;
+   line-height: 70px;
+   }
+   .content{
+   border: 1px solid grey;
+   height: 550px;
+   width: 550px;
+   }
+   .content img{
+   height: 550px;
+   width: 550px;
+   }
+   .active{
+   background: #3A9ffb;
+   color: white;
+   }
+   </style>
+  </head>
+  <body>
+   <div class="app">
+   <div class="title">
+   <ul class="myul">
+   <li v-for="(item,index) in mess" v-bind:class="{ 'active': status === index}" v-on:click="changeImg(index)">
+    {{item.content}}
+   </li>
+   </ul>
+   </div>
+   <div class="content">
+   <img src="images\images(1)\images\America.JPG" v-if="status === 0">
+   <img src="images\images(1)\images\Japan.JPG" v-if="status === 1">
+   <img src="images\images(1)\images\korea.JPG" v-if="status === 2">
+   <img src="images\images(1)\images\Russia.JPG" v-if="status === 3">
+   <img src="images\images(1)\images\Britain.JPG" v-if="status === 4">
+   <img src="images\images(1)\images\France.JPG" v-if="status === 5">
+   <img src="images\images(1)\images\Germany.JPG" v-if="status === 6">
+   <img src="images\images(1)\images\Italy.JPG" v-if="status === 7">
+   </div>
+   </div>
+  </body>
+  </html>
+  <script src="https://cdn.bootcss.com/vue/2.5.20/vue.js"></script>
+  <script type="text/javascript">
+   new Vue({
+   el:".app",
+   data:{
+   status:0, //状态显示
+   mess:[
+   {id:0,content:"美国"},
+   {id:1,content:"日本"},
+   {id:2,content:"韩国"},
+   {id:3,content:"俄罗斯"},
+   {id:4,content:"英国"},
+   {id:5,content:"法国"},
+   {id:6,content:"德国"},
+   {id:7,content:"意大利"}
+   ]
+   },
+   methods:{
+   changeImg:function(index){
+   this.status=index;
+   }
+   }
+   })
+  </script>
+
+</html>
+
+

@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>疫情数据可视化第二组</title>
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="./css/xadmin.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/xadmin.js"></script>
+
+</head>
+<body>
+    <!-- 顶部开始 -->
+    <div class="container">
+        <div class="logo"><a href="./index.html">疫情数据可视化第二组</a></div>
+        <div class="left_open">
+            <i title="展开左侧栏" class="iconfont">&#xe699;</i>
+        </div>
+        <ul class="layui-nav right" lay-filter="">
+          <li class="layui-nav-item">
+            <a href="javascript:;">####</a>
+            <dl class="layui-nav-child"> <!-- 二级菜单 -->
+              <dd><a href="./login.html">退出</a></dd>
+            </dl>
+          </li>
+        </ul>
+
+    </div>
+    <!-- 顶部结束 -->
+    <!-- 中部开始 -->
+     <!-- 左侧菜单开始 -->
+    <div class="left-nav">
+      <div id="side-nav">
+        <ul id="nav">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6b8;</i>
+                    <cite>中国各省份疫情地图</cite>
+                    <i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a _href="安徽疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>安徽省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="北京疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>北京市</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="福建疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>福建省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="甘肃疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>甘肃省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="广东疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>广东省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="广西疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>广西省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="海南疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>海南省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="河北疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>河北省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="河南疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>河南省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="黑龙江疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>黑龙江省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="湖北疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>湖北省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="湖南疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>湖南省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="吉林疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>吉林省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="江苏疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>江苏省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="江苏疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>江西省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="辽宁疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>辽宁省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="内蒙古疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>内蒙古</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="山东疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>山东省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="山西疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>山西省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="上海疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>上海市</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="四川疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>四川省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="天津疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>天津省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="云南疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>云南省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="浙江疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>浙江省</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="重庆疫情地图.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>重庆市</cite>
+
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+        </ul>
+          <ul id="nav">
+              <li>
+                  <a href="javascript:;">
+                      <i class="iconfont">&#xe6b8;</i>
+                      <cite>中国确诊地图</cite>
+                      <i class="iconfont nav_right">&#xe697;</i>
+                  </a>
+                  <ul class="sub-menu">
+                      <li>
+                          <a _href="中国累计确诊.html">
+                              <i class="iconfont">&#xe6a7;</i>
+                              <cite>中国累计确诊</cite>
+                          </a>
+                      </li >
+                      <li>
+                          <a _href="中国现存确诊.html">
+                              <i class="iconfont">&#xe6a7;</i>
+                              <cite>中国现存确诊</cite>
+
+                          </a>
+                      </li >
+
+                  </ul>
+              </li>
+          </ul>
+          </li>
+          <ul id="nav">
+              <li>
+                  <a href="javascript:;">
+                      <i class="iconfont">&#xe6b8;</i>
+                      <cite>世界疫情图</cite>
+                      <i class="iconfont nav_right">&#xe697;</i>
+                  </a>
+                  <ul class="sub-menu">
+                      <li>
+                          <a _href="世界疫情图.html">
+                              <i class="iconfont">&#xe6a7;</i>
+                              <cite>世界疫情图</cite>
+
+                          </a>
+                      </li >
+
+                  </ul>
+              </li>
+
+          </ul>
+
+
+          <ul id="nav">
+              <li>
+                  <a href="javascript:;">
+                      <i class="iconfont">&#xe6b8;</i>
+                      <cite>热词图及新闻政策分析</cite>
+                      <i class="iconfont nav_right">&#xe697;</i>
+                  </a>
+                  <ul class="sub-menu">
+                      <li>
+                          <a _href="词云1.html">
+                              <i class="iconfont">&#xe6a7;</i>
+                              <cite>外国词云图</cite>
+                          </a>
+                      </li >
+                      <li>
+                          <a _href="热词2.html">
+                              <i class="iconfont">&#xe6a7;</i>
+                              <cite>微博热词图</cite>
+
+                          </a>
+                      </li >
+                      <li>
+                          <a _href="政策3.html">
+                              <i class="iconfont">&#xe6a7;</i>
+                              <cite>新闻政策分析</cite>
+
+                          </a>
+                      </li >
+
+                  </ul>
+              </li>
+          </ul>
+          </li>
+
+
+
+      </div>
+    </div>
+    <!-- <div class="x-slide_left"></div> -->
+    <!-- 左侧菜单结束 -->
+    <!-- 右侧主体开始 -->
+    <div class="page-content">
+        <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
+            <ul class="layui-tab-title">
+                <li class="home"><i class="layui-icon">&#xe68e;</i>我的桌面</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <blockquote class="layui-elem-quote">欢迎：
+                        <span class="x-red">###</span>！</blockquote>
+
+                    <fieldset class="layui-elem-field">
+                        <legend>登录用户信息</legend>
+                        <div class="layui-field-box">
+                            <table class="layui-table">
+                                <tbody>
+                                <tr>
+                                    <th>用户名</th>
+                                    <td>####</td></tr>
+                                <tr>
+                                    <th>密码</th>
+                                    <td>####</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="page-content-bg"></div>
+    <!-- 右侧主体结束 -->
+    <!-- 中部结束 -->
+    <!-- 底部开始 -->
+    <div class="footer">
+        <div class="copyright">Copyright ©2020 数据可视化第二组</div>
+    </div>
+
+</body>
+</html>
